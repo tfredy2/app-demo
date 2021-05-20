@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ExcelExampleComponent } from './excel-example/excel-example.component';
+import { ExcelExampleComponent } from './components/excel-example/excel-example.component';
+import { LoginComponent } from './components/login/login.component'
+import { AlbumComponent } from './components/album/album.component';
 
 const routes: Routes = [
-  { path: '', component: ExcelExampleComponent }
+  { path: '', component: LoginComponent },
+  { path: 'excel', component: ExcelExampleComponent },
+  { path: 'album', component: AlbumComponent },  
 ];
 
 @NgModule({

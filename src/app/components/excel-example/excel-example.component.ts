@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SpotifyService } from '../services/spotify.service';
 
 @Component({
   selector: 'app-excel-example',
@@ -8,10 +7,9 @@ import { SpotifyService } from '../services/spotify.service';
 })
 export class ExcelExampleComponent implements OnInit {
 
-  constructor(private _service:SpotifyService) { }
+  constructor() { }
 
   ngOnInit() {
-    console.log(this._service.GetLogin());
   }
 
 }
